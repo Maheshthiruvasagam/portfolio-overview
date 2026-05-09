@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahesh T – Frontend Developer Portfolio. IT Student at Dhanalakshmi Srinivasan Engineering College. Passionate about building modern, responsive web applications." />
+  <meta name="keywords" content="Mahesh T, Frontend Developer, JavaScript Developer, React Developer, Portfolio, IT Student" />
+  <meta name="author" content="Mahesh T" />
+  <title>Mahesh T | Frontend Developer</title>
+  <link rel="icon" type="image/png" href="assests/bag.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <!-- ========== LOADER ========== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-letters">
+        <span>M</span><span>A</span><span>H</span><span>E</span><span>S</span><span>H</span>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-sub">Loading Portfolio...</p>
+    </div>
+  </div>
+ 
+  <!-- ========== CURSOR ========== -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+ 
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">MT<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+ 
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">Available for Opportunities</div>
+      <h1 class="hero-name reveal-up">MAHESH<br /><span class="outline-text">T</span></h1>
+      <div class="hero-typing reveal-up">
+        <span class="typing-prefix">// </span>
+        <span id="typingText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc reveal-up">
+        Driven Information Technology student and frontend developer passionate about building
+        modern responsive web applications that combine clean code with exceptional user experience.
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="assests/Mahesh-Resume.docx" class="btn btn-outline">
+          <span>Download Resume</span>
+          <i class="fas fa-download"></i>
+        </a>
+      </div>
+      <div class="hero-socials reveal-up">
+        <a href="https://github.com/Maheshthiruvasagam" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/maheshthiruvasagam" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:maheshthiru09042006@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+ 
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-label reveal-up">01 / About Me</div>
+      <h2 class="section-title reveal-up">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card reveal-left">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">MT</div>
+          </div>
+          <div class="about-code-block">
+            <span class="code-comment">// developer.js</span><br/>
+            <span class="code-const">const</span> <span class="code-var">mahesh</span> = {<br/>
+            &nbsp;&nbsp;<span class="code-key">role:</span> <span class="code-str">"Frontend Dev"</span>,<br/>
+            &nbsp;&nbsp;<span class="code-key">year:</span> <span class="code-str">"3rd Year IT"</span>,<br/>
+            &nbsp;&nbsp;<span class="code-key">focus:</span> <span class="code-str">"React & JS"</span>,<br/>
+            &nbsp;&nbsp;<span class="code-key">open:</span> <span class="code-bool">true</span><br/>
+            };
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <p>
+            Driven Information Technology student and frontend developer with a strong foundation in modern
+            web development and core Java. Adept at translating complex design requirements into scalable,
+            responsive, and functional software using JavaScript, HTML, and CSS.
+          </p>
+          <p>
+            Currently in my 3rd year at Dhanalakshmi Srinivasan Engineering College, I've completed a
+            real-world internship at NuroAI and built production-level projects deployed on Vercel and Netlify.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">1</span>
+              <span class="stat-label">Internship</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3rd</span>
+              <span class="stat-label">Year IT</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-label reveal-up">02 / Skills</div>
+      <h2 class="section-title reveal-up">Tech Stack</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" style="--delay:0.0s">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <span class="skill-name">HTML5</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.05s">
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+          <span class="skill-name">CSS3</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.1s">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <span class="skill-name">JavaScript</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.15s">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <span class="skill-name">React JS</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.2s">
+          <div class="skill-icon"><i class="fas fa-wind"></i></div>
+          <span class="skill-name">Tailwind CSS</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.25s">
+          <div class="skill-icon"><i class="fab fa-github"></i></div>
+          <span class="skill-name">GitHub</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.3s">
+          <div class="skill-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <span class="skill-name">Netlify</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.35s">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <span class="skill-name">Vercel</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-card reveal-up" style="--delay:0.4s">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <span class="skill-name">VS Code</span>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-label reveal-up">03 / Experience</div>
+      <h2 class="section-title reveal-up">Work History</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Developer Intern</h3>
+                <span class="timeline-company">NuroAI</span>
+              </div>
+              <span class="timeline-date">Aug 2025 – Oct 2025</span>
+            </div>
+            <ul class="timeline-list">
+              <li>Built responsive web interfaces using React.js and Mantine UI</li>
+              <li>Created reusable and modular UI components for production use</li>
+              <li>Converted design mockups into functional, pixel-perfect applications</li>
+              <li>Improved frontend code maintainability and performance</li>
+              <li>Collaborated with the team on various development tasks and projects</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>React.js</span><span>Mantine UI</span><span>JavaScript</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-label reveal-up">04 / Projects</div>
+      <h2 class="section-title reveal-up">Selected Work</h2>
+      <div class="projects-grid">
+ 
+        <div class="project-card reveal-up" style="--delay:0s">
+          <div class="project-number">01</div>
+          <div class="project-body">
+            <h3 class="project-title">Netflix Clone</h3>
+            <p class="project-desc">
+              A fully responsive streaming platform clone with dynamic media UI, hover previews,
+              and category-based content layout. Built for performance and optimized for Vercel deployment.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://netflix-clone-fnlx.vercel.app" target="_blank" rel="noopener" class="project-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/Maheshthiruvasagam/Netflix-Clone./" target="_blank" rel="noopener" class="project-btn project-btn-ghost">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+ 
+        <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <h3 class="project-title">E-Commerce Web App</h3>
+            <p class="project-desc">
+              A dynamic e-commerce interface featuring interactive product catalogs, cart functionality,
+              and responsive shopping experience. Deployed live on Netlify for real-world accessibility.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://vegan-richa.netlify.app" target="_blank" rel="noopener" class="project-btn">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+            <a href="https://github.com/Maheshthiruvasagam/VeganRicha2/" target="_blank" rel="noopener" class="project-btn project-btn-ghost">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== EDUCATION & CERTIFICATIONS ========== -->
+  <section id="education" class="section education">
+    <div class="container">
+      <div class="section-label reveal-up">05 / Education & Certs</div>
+      <h2 class="section-title reveal-up">Academic Background</h2>
+ 
+      <div class="edu-grid">
+        <div class="edu-card reveal-left glass-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>B.Tech – Information Technology</h3>
+          <span class="edu-inst">Dhanalakshmi Srinivasan Engineering College</span>
+          <span class="edu-year">2023 – 2027</span>
+          <div class="edu-cgpa">CGPA: <strong>7.9</strong></div>
+        </div>
+        <div class="edu-card reveal-right glass-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <h3>Higher Secondary Education</h3>
+          <span class="edu-inst">Tamil Nadu State Board</span>
+          <span class="edu-year">2022 – 2023</span>
+          <div class="edu-cgpa">Score: <strong>78.8%</strong></div>
+        </div>
+      </div>
+ 
+      <h2 class="section-title reveal-up" style="margin-top:5rem;">Certifications</h2>
+      <div class="certs-grid">
+        <div class="cert-card reveal-up" style="--delay:0s">
+          <div class="cert-badge"><i class="fab fa-js"></i></div>
+          <div class="cert-body">
+            <h4>JavaScript Master Course</h4>
+            <p>From Beginner to Expert Developer</p>
+            <span class="cert-issuer"><i class="fas fa-certificate"></i> Udemy · Learnify IT</span>
+            <span class="cert-date">April 19, 2026 · 6 hours</span>
+          </div>
+          <div class="cert-verified">✓ Verified</div>
+        </div>
+        <div class="cert-card reveal-up" style="--delay:0.1s">
+          <div class="cert-badge"><i class="fab fa-react"></i></div>
+          <div class="cert-body">
+            <h4>ReactJs – The Complete Course</h4>
+            <p>The Complete ReactJs Course For Beginners</p>
+            <span class="cert-issuer"><i class="fas fa-certificate"></i> Udemy · Sara Academy</span>
+            <span class="cert-date">May 9, 2026 · 3.5 hours</span>
+          </div>
+          <div class="cert-verified">✓ Verified</div>
+        </div>
+        <div class="cert-card reveal-up" style="--delay:0.2s">
+          <div class="cert-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="cert-body">
+            <h4>Software Developer Internship</h4>
+            <p>Internship Completion Certificate</p>
+            <span class="cert-issuer"><i class="fas fa-building"></i> NuroAI · Trichy, TN</span>
+            <span class="cert-date">Aug – Oct 2025 · React.js & Mantine UI</span>
+          </div>
+          <div class="cert-verified">✓ Verified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== RESUME ========== -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-label reveal-up">06 / Resume</div>
+      <h2 class="section-title reveal-up">My Resume</h2>
+      <div class="resume-card reveal-up glass-card">
+        <div class="resume-preview">
+          <div class="resume-lines">
+            <div class="r-line r-name"></div>
+            <div class="r-line r-title"></div>
+            <div class="r-section">
+              <div class="r-block"></div>
+              <div class="r-block"></div>
+              <div class="r-block"></div>
+            </div>
+          </div>
+          <div class="resume-badge">PDF</div>
+        </div>
+        <div class="resume-info">
+          <h3>Mahesh T – Frontend Developer</h3>
+          <p>My resume covers my technical skills, internship experience at NuroAI, projects, education at DSEC, and certifications from Udemy.</p>
+          <ul class="resume-highlights">
+            <li><i class="fas fa-check"></i> ATS-Optimized Format</li>
+            <li><i class="fas fa-check"></i> Internship Experience Included</li>
+            <li><i class="fas fa-check"></i> Verified Certifications</li>
+            <li><i class="fas fa-check"></i> Live Project Links</li>
+          </ul>
+          <a href="assests/Mahesh-Resume.docx" class="btn btn-primary resume-download" id="resumeDownloadBtn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-label reveal-up">07 / Contact</div>
+      <h2 class="section-title reveal-up">Let's Connect</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-tagline">Have a project in mind or want to hire me? I'm open to opportunities!</p>
+          <div class="contact-details">
+            <a href="tel:9047818342" class="contact-item">
+              <div class="c-icon"><i class="fas fa-phone"></i></div>
+              <div><span>Phone</span><strong>+91 9047818342</strong></div>
+            </a>
+            <a href="mailto:maheshthiru09042006@gmail.com" class="contact-item">
+              <div class="c-icon"><i class="fas fa-envelope"></i></div>
+              <div><span>Email</span><strong>maheshthiru09042006@gmail.com</strong></div>
+            </a>
+            <a href="https://linkedin.com/in/maheshthiruvasagam" target="_blank" rel="noopener" class="contact-item">
+              <div class="c-icon"><i class="fab fa-linkedin"></i></div>
+              <div><span>LinkedIn</span><strong>maheshthiruvasagam</strong></div>
+            </a>
+            <a href="https://github.com/Maheshthiruvasagam" target="_blank" rel="noopener" class="contact-item">
+              <div class="c-icon"><i class="fab fa-github"></i></div>
+              <div><span>GitHub</span><strong>Maheshthiruvasagam</strong></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <div class="glass-card contact-form-card">
+            <div id="formSuccess" class="form-success hidden">
+              <i class="fas fa-check-circle"></i>
+              <p>Message sent successfully!</p>
+            </div>
+            <div id="contactForm">
+              <div class="form-group">
+                <input type="text" id="fname" placeholder=" " autocomplete="name" />
+                <label for="fname">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="femail" placeholder=" " autocomplete="email" />
+                <label for="femail">Your Email</label>
+              </div>
+              <div class="form-group">
+                <textarea id="fmessage" placeholder=" " rows="5"></textarea>
+                <label for="fmessage">Your Message</label>
+              </div>
+              <button class="btn btn-primary w-full" id="sendBtn" type="button">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">MT<span class="dot">.</span></span>
+      <p>Designed &amp; Developed by <strong>Mahesh T</strong></p>
+      <div class="footer-socials">
+        <a href="https://github.com/Maheshthiruvasagam" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/maheshthiruvasagam" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:maheshthiru09042006@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
